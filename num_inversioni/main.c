@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 void print_vec(int* v, int n){
     for(int i =0; i<n; i++){
         printf("v[%d] = %d\n", i, v[i]);
