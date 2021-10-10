@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define NUM_MAX 100
 void print_vec(int* v, int n){
     for(int i =0; i<n; i++){
         printf("v[%d] = %d\n", i, v[i]);
