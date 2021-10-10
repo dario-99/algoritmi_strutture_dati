@@ -6,9 +6,6 @@ void print_vec(int* v, int n){
         printf("v[%d] = %d\n", i, v[i]);
     }
 }
-int gauss(int n){
-    return (n*(n+1))/2;
-}
 int merge(int *a, int p, int q, int r){
     int n1 = q-p+1;
     int n2 = r-q;
@@ -44,17 +41,17 @@ int count_inversion(int *a, int p, int r){
     int count = 0;
     if(p<r){
         int q = (int)((p+r)/2);
-        printf("q = %d\n",q);
+        //printf("q = %d\n",q);
         count += count_inversion(a, p, q);
         count += count_inversion(a,q+1,r);
         count += merge(a,p,q,r);
-        printf("temp count = %d, al q=%d\n",count, q);
+        //printf("temp count = %d, al q=%d\n",count, q);
     }
     return count;
 }
 
 int main(){
-    int a[] = {1,2,3,5,4};
+    int a[] = {8,4,6,5,4};
     int r = 5-1;
 
     int ris = count_inversion(a,0,r);
