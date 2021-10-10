@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-void print_vec(int* v, int n){
+void print_vect(int* v, int n){
     for(int i =0; i<n; i++){
         printf("v[%d] = %d\n", i, v[i]);
     }
@@ -56,5 +56,5 @@ int main(){
 
     int ris = count_inversion(a,0,r);
     printf("il numero di inversioni e': %d\n", ris);
-    print_vec(a, r+1);
+    print_vect(a, r+1);
 }
