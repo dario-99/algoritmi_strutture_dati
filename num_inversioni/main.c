@@ -1,15 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 void print_vec(int* v, int n){
     for(int i =0; i<n; i++){
         printf("v[%d] = %d\n", i, v[i]);
     }
 }
-
-
-int merge(int *a, int p, int q, int r){
-    
+int merge(int *a, int p, int q, int r){   
     int n1 = q-p+1;
     int n2 = r-q;
     int* left = malloc(n1*sizeof(int));
