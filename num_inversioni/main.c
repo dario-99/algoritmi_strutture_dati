@@ -8,8 +8,8 @@ void print_vect(int* v, int n){
 int merge(int *a, int p, int q, int r){   
     int n1 = q-p+1;
     int n2 = r-q;
-    int* left = malloc(n1*sizeof(int));
-    int* right = malloc(n2*sizeof(int));
+    int* left = (int*)malloc(n1*sizeof(int));
+    int* right = (int*)malloc(n2*sizeof(int));
     for(int i =0; i<n1; i++){
         left[i] = a[i+p];
     }
@@ -33,6 +33,8 @@ int merge(int *a, int p, int q, int r){
             count++;
         }
     }
+    free(left);
+    free(right);
     return ris;
 }
 int count_inversion(int *a, int p, int r){
