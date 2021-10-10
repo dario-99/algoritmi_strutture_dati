@@ -5,6 +5,7 @@ void print_vec(int* v, int n){
         printf("v[%d] = %d\n", i, v[i]);
     }
 }
+
 int merge(int *a, int p, int q, int r){
     int n1 = q-p+1;
     int n2 = r-q;
