@@ -5,7 +5,6 @@ void print_vect(int* v, int n){
         printf("v[%d] = %d\n", i, v[i]);
     }
 }
-
 int merge(int *a, int p, int q, int r){   
     int n1 = q-p+1;
     int n2 = r-q;
@@ -36,7 +35,6 @@ int merge(int *a, int p, int q, int r){
     }
     return ris;
 }
-
 int count_inversion(int *a, int p, int r){
     int count = 0;
     if(p<r){
@@ -49,7 +47,6 @@ int count_inversion(int *a, int p, int r){
     }
     return count;
 }
-
 int main(){
     int a[] = {8,4,6,5,4};
     int r = 5-1;
